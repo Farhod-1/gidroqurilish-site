@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>“Gidroquriliş buyurtmaçi xizmati” MÇJ — rasmiy veb-sayt</title>
+  <meta name="description" content="“Gidroquriliş buyurtmaçi xizmati” MÇJ — “Özbekgidroenergo” AJ tizimidagi taşkilot. Gidroelektr stansiyalarni quriş va modernizatsiya qiliş loyihalarida buyurtmaçi.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#asosiy" data-i18n="skip">Asosiy mazmunga ötiş</a>
+
+<!-- ===== Xizmat paneli ===== -->
+<div class="service">
+  <div class="container service__inner">
+    <span class="service__org" data-i18n="svc.org">“Özbekgidroenergo” AJ tizimidagi taşkilot</span>
+
+    <div class="service__tools">
+      <div class="a11y" role="group" aria-label="Maxsus imkoniyatlar" data-i18n-aria="a11y.group">
+        <span class="a11y__label" data-i18n="a11y.label">Maxsus imkoniyatlar:</span>
+        <button type="button" data-font="-1" aria-label="Şriftni kiçraytiriş" data-i18n-aria="a11y.minus">A−</button>
+        <button type="button" data-font="0" aria-label="Şriftning odatiy ölçami" data-i18n-aria="a11y.reset">A</button>
+        <button type="button" data-font="1" aria-label="Şriftni kattalaştiriş" data-i18n-aria="a11y.plus">A+</button>
+        <button type="button" id="mono" aria-pressed="false" data-i18n="a11y.mono">Oq-qora</button>
+      </div>
+      <div class="langs" role="group" aria-label="Til" data-i18n-aria="lang.group">
+        <button type="button" data-lang="uz" lang="uz" aria-pressed="true">Özb</button>
+        <button type="button" data-lang="ru" lang="ru" aria-pressed="false">Рус</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">Eng</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Sarlavha ===== -->
+<header class="masthead">
+  <div class="container masthead__inner">
+    <a class="brand" href="#asosiy">
+      <span class="brand__mark"><img src="assets/logo-uzgidro.jpg" alt="" width="722" height="392"></span>
+      <span class="brand__text">
+        <span class="brand__name" data-i18n="brand.name">“Gidroquriliş buyurtmaçi xizmati”</span>
+        <span class="brand__form" data-i18n="brand.form">mas’uliyati çeklangan jamiyati</span>
+      </span>
+    </a>
+
+    <div class="hotline">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.15.4 2.35.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1Z"/></svg>
+      <span>
+        <span class="hotline__label" data-i18n="lbl.phone">Telefon</span>
+        <a class="hotline__number" href="tel:+998915005168">+998 91 500-51-68</a>
+        <span class="hotline__note" data-i18n="addr.short">Toşkent ş., Bobur köçasi, 20-uy</span>
+      </span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Menyu ===== -->
+<div class="menubar" id="menubar">
+  <div class="container menubar__inner">
+    <button class="menubar__toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu">
+      <span class="menubar__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span data-i18n="m.toggle">Menyu</span>
+    </button>
+    <nav class="menu" id="menu" aria-label="Asosiy menyu" data-i18n-aria="m.aria">
+      <a href="#yangiliklar" data-i18n="m.news">Yangiliklar</a>
+      <a href="#tashkilot" data-i18n="m.about">Taşkilot haqida</a>
+      <a href="#faoliyat" data-i18n="m.act">Faoliyat</a>
+      <a href="#loyihalar" data-i18n="m.proj">Loyihalar</a>
+      <a href="#xarita" data-i18n="m.map">GESlar xaritasi</a>
+      <a href="#hujjatlar" data-i18n="m.docs">Hujjatlar</a>
+      <a href="#rahbariyat" data-i18n="m.lead">Rahbariyat</a>
+      <a href="#galereya" data-i18n="m.gal">Fotogalereya</a>
+      <a href="#aloqa" data-i18n="m.contact">Boğlaniş</a>
+    </nav>
+  </div>
+</div>
+
+<main id="asosiy">
+
+<!-- ===== Karusel ===== -->
+<section class="hero" id="karusel" aria-roledescription="carousel" aria-label="Asosiy bannerlar" data-i18n-aria="hs.aria">
+  <div class="hero__track">
+    <article class="hslide is-active">
+      <div class="hslide__text">
+        <span class="hslide__kicker" data-i18n="hs1.k">“Özbekgidroenergo” AJ tizimidagi taşkilot</span>
+        <h2 data-i18n="hs1.t">Gidroenergetika obyektlari qurilişida işonçli buyurtmaçi</h2>
+        <p data-i18n="hs1.p">Taşkilot gidroelektr stansiyalarni quriş va modernizatsiya qilişda «tayyor holda foydalanişga topşiriş» şarti asosida buyurtmaçi vazifasini bajaradi.</p>
+      </div>
+      <div class="hslide__img" style="background-image:url('assets/img/botbot-agregat.jpg')"></div>
+    </article>
+    <article class="hslide">
+      <div class="hslide__text">
+        <span class="hslide__kicker" data-i18n="hs2.k">PQ-163-son qaror ijrosi</span>
+        <h2 data-i18n="hs2.t">Bot-bot mikro GES — «yaşil» energiyaning yangi manbai</h2>
+        <p data-i18n="hs2.p">Samarqand viloyati Bulunğur tumanida bunyod etilayotgan mikro GES yiliga 3,79 mln kVt·soat elektr energiyasi işlab çiqaradi va 1 300 ta xonadonni ta’minlaydi.</p>
+      </div>
+      <div class="hslide__img" style="background-image:url('assets/img/botbot-bino.jpg')"></div>
+    </article>
+    <article class="hslide">
+      <div class="hslide__text">
+        <span class="hslide__kicker" data-i18n="hs3.k">Vazirlar Mahkamasining 884-son qarori</span>
+        <h2 data-i18n="hs3.t">JFK-5 GES va Şahrixon GESlar kaskadi — 28,6 MVt yangi quvvat</h2>
+        <p data-i18n="hs3.p">Taşkilot ikki investitsiya loyihasi böyiça ijro etuvçi taşkilot etib belgilangan. Loyihalarning jami qiymati — 40,8 mln AQŞ dollari.</p>
+      </div>
+      <div class="hslide__img" style="background-image:url('assets/img/kpi-yigilish-1.jpg')"></div>
+    </article>
+  </div>
+  <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Oldingi slayd" data-i18n-aria="hs.prev">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="hero__arrow hero__arrow--next" type="button" aria-label="Keyingi slayd" data-i18n-aria="hs.next">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="hero__dots"></div>
+</section>
+
+
+<!-- ===== Yangiliklar ===== -->
+<section class="block" id="yangiliklar">
+  <div class="container">
+    <header class="block__head">
+      <h2 data-i18n="m.news">Yangiliklar</h2>
+    </header>
+
+    <div class="newsboard">
+      <article class="lead-news">
+        <img src="assets/img/ochiq-muloqot.jpg" alt="Tadbirkorlar bilan oçiq muloqot" data-i18n-alt="g6.alt" width="800" height="533">
+        <div class="lead-news__box">
+          <div class="datebox"><b>24</b><span data-i18n="mon.sep">sentabr</span></div>
+          <div>
+            <h3 data-i18n="n1.t">Kiçik va mikro GESlar qurilişi böyiça tadbirkorlar bilan oçiq muloqot ötkazildi</h3>
+            <p data-i18n="n1.p">Samarqand şahridagi muloqotda taşkilot mas’ullari va 50 nafardan ortiq tadbirkor iştirok etdi.</p>
+          </div>
+          <footer><time datetime="2026-09-24">24.09.2026</time><span data-i18n="cat.events">Tadbirlar</span></footer>
+        </div>
+      </article>
+
+      <article class="lead-news">
+        <img src="assets/img/botbot-bino.jpg" alt="Bot-bot mikro GES binosi" data-i18n-alt="g1.alt" width="800" height="533">
+        <div class="lead-news__box">
+          <div class="datebox"><b>29</b><span data-i18n="mon.jul">iyul</span></div>
+          <div>
+            <h3 data-i18n="n2.t">PQ-163-son qarori ijrosi: Bulunğurda zamonaviy mikro GES bunyod etilmoqda</h3>
+            <p data-i18n="n2.p">Umumiy quvvati 0,5 MVt bölgan mikro GES loyihasining buyurtmaçisi — taşkilotimiz.</p>
+          </div>
+          <footer><time datetime="2026-07-29">29.07.2026</time><span data-i18n="m.proj">Loyihalar</span></footer>
+        </div>
+      </article>
+
+      <ul class="newslist">
+        <li>
+          <div class="datebox datebox--plain"><b>16</b><span data-i18n="d.l1">iyun 2026</span></div>
+          <p data-i18n="l1">Zokirov Avazbek Zokirjon öğli taşkilot direktori etib tayinlandi</p>
+        </li>
+        <li>
+          <div class="datebox datebox--plain"><b>04</b><span data-i18n="d.l1">iyun 2026</span></div>
+          <p data-i18n="l2">Natijadorlikni baholaş va rağbatlantiriş mexanizmlari takomillaştirilmoqda</p>
+        </li>
+        <li>
+          <div class="datebox datebox--plain"><b>21</b><span data-i18n="d.l3">may 2026</span></div>
+          <p data-i18n="l3">Bot-bot mikro GES — energiya tejamkor va ekologik samarali loyiha</p>
+        </li>
+        <li>
+          <div class="datebox datebox--plain"><b>10</b><span data-i18n="d.l4">aprel 2026</span></div>
+          <p data-i18n="l4">TIQXMMI talabalari bilan oçiq muloqot: taşkilot mutaxassislari taqdimot ötkazdi</p>
+        </li>
+        <li>
+          <div class="datebox datebox--plain"><b>19</b><span data-i18n="d.l5">dekabr 2025</span></div>
+          <p data-i18n="l5">“Yonğin xavfsizligi oyligi” doirasida taşkilotda tadbirlar ötkazildi</p>
+        </li>
+        <li>
+          <div class="datebox datebox--plain"><b>18</b><span data-i18n="d.l6">sentabr 2025</span></div>
+          <p data-i18n="l6">Malaka oşiriş tinglovçilari taşkilot faoliyati bilan yaqindan tanişdilar</p>
+        </li>
+        <li>
+          <div class="datebox datebox--plain"><b>12</b><span data-i18n="d.l7">avgust 2025</span></div>
+          <p data-i18n="l7">Taşkilot jamoasi Buxoroi şarifga ziyorat sayohatini uyuştirdi</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Tashkilot haqida ===== -->
+<section class="block block--grey" id="tashkilot">
+  <div class="container">
+    <header class="block__head">
+      <h2 data-i18n="m.about">Taşkilot haqida</h2>
+    </header>
+
+    <div class="about">
+      <div class="about__text">
+        <p data-i18n="ab.p1">“Gidroquriliş buyurtmaçi xizmati” mas’uliyati çeklangan jamiyati — “Özbekgidroenergo” aksiyadorlik jamiyati tizimidagi taşkilot bölib, gidroenergetika obyektlarini quriş va modernizatsiya qilişda buyurtmaçi vazifasini bajaradi.</p>
+        <p data-i18n="ab.p2">Taşkilot 2017-yil 25-sentabrda davlat röyxatidan ötkazilgan. Yagona iştirokçi — “Özbekgidroenergo” AJ (uluşi 100%).</p>
+        <p data-i18n="ab.p3">Özbekiston Respublikasi Prezidentining 2026-yil 1-maydagi PQ-163-son qaroriga muvofiq, taşkilot “Özbekgidroenergo” AJ tizimida obyektlarni tayyor holda foydalanişga topşiriş böyiça buyurtmaçi hisoblanadi.</p>
+        <img src="assets/img/kpi-yigilish-2.jpg" alt="Taşkilot rahbariyati va mas’ullari iştirokidagi yiğiliş" data-i18n-alt="g5" loading="lazy" width="800" height="533">
+      </div>
+
+      <div class="about__data">
+        <table class="datatable">
+          <caption data-i18n="req.caption">Rekvizitlar</caption>
+          <tbody>
+            <tr><th scope="row" data-i18n="req.full">Töliq nomi</th><td data-i18n="req.full.v">“GIDROQURILIŞ BUYURTMAÇI XIZMATI” mas’uliyati çeklangan jamiyati</td></tr>
+            <tr><th scope="row" data-i18n="req.short">Qisqa nomi</th><td data-i18n="req.short.v">“GIDROQURILIŞ BUYURTMAÇI XIZMATI” MÇJ</td></tr>
+            <tr><th scope="row" data-i18n="req.inn">STIR</th><td>305071842</td></tr>
+            <tr><th scope="row" data-i18n="req.date">Röyxatdan ötgan sana</th><td>25.09.2017</td></tr>
+            <tr><th scope="row" data-i18n="req.founder">Ta’sisçi</th><td data-i18n="req.founder.v">“Özbekgidroenergo” AJ — 100%</td></tr>
+            <tr><th scope="row" data-i18n="req.capital">Ustav fondi</th><td data-i18n="req.capital.v">910 427 000 söm</td></tr>
+            <tr><th scope="row" data-i18n="req.activity">Faoliyat turi (IFUT)</th><td data-i18n="req.activity.v">41202 — yaşaş uçun möljallanmagan binolar quriş</td></tr>
+            <tr><th scope="row" data-i18n="req.addr">Yuridik manzil</th><td data-i18n="addr.full">Toşkent şahri, Yakkasaroy tumani, Rakatboşi MFY, Bobur köçasi, 20-uy</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <dl class="figures">
+      <div><dt data-i18n="fig.year">Taşkil etilgan yil</dt><dd>2017</dd></div>
+      <div><dt data-i18n="fig.share">“Özbekgidroenergo” AJ uluşi</dt><dd>100%</dd></div>
+      <div><dt data-i18n="fig.cap">Loyihalarning jami quvvati</dt><dd data-i18n="fig.cap.v">28,6 MVt</dd></div>
+      <div><dt data-i18n="fig.cost">Investitsiya loyihalari qiymati</dt><dd data-i18n="fig.cost.v">40,8 mln AQŞ $</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ===== Faoliyat yo‘nalishlari ===== -->
+<section class="block" id="faoliyat">
+  <div class="container">
+    <header class="block__head">
+      <h2 data-i18n="act.h">Faoliyat yönalişlari</h2>
+    </header>
+
+    <ul class="lines">
+      <li>
+        <h3 data-i18n="act1.t">Buyurtmaçi vazifasi</h3>
+        <p data-i18n="act1.p">Gidroenergetika obyektlarini «tayyor holda foydalanişga topşiriş» şarti asosida qurişda buyurtmaçi funksiyalarini bajariş.</p>
+      </li>
+      <li>
+        <h3 data-i18n="act2.t">Investitsiya loyihalari ijrosi</h3>
+        <p data-i18n="act2.p">Hukumat qarorlari bilan tasdiqlangan GES qurilişi va modernizatsiyasi loyihalarini ijro etuvçi taşkilot sifatida amalga oşiriş.</p>
+      </li>
+      <li>
+        <h3 data-i18n="act3.t">Loyiha-smeta hujjatlari</h3>
+        <p data-i18n="act3.p">Loyiha-smeta hujjatlarini işlab çiqiş jarayonini loyiha taşkilotlari bilan hamkorlikda muvofiqlaştiriş.</p>
+      </li>
+      <li>
+        <h3 data-i18n="act4.t">Tender va xaridlar</h3>
+        <p data-i18n="act4.p">Pudratçi va yetkazib beruvçilarni tanlaş böyiça tender savdolarini taşkil etiş, şartnomalar ijrosini ta’minlaş.</p>
+      </li>
+      <li>
+        <h3 data-i18n="act5.t">Sifat va xavfsizlik nazorati</h3>
+        <p data-i18n="act5.p">Quriliş-montaj işlari sifati, muddatlari hamda gidrotexnika inşootlari xavfsizligi talablariga rioya etilişini nazorat qiliş.</p>
+      </li>
+      <li>
+        <h3 data-i18n="act6.t">Obyektlarni foydalanişga topşiriş</h3>
+        <p data-i18n="act6.p">Qurib bitkazilgan obyektlarni Davlat qabul komissiyasi dalolatnomasi asosida foydalanişga qabul qilişni taşkil etiş.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Loyihalar ===== -->
+<section class="block block--grey" id="loyihalar">
+  <div class="container">
+    <header class="block__head">
+      <h2 data-i18n="m.proj">Loyihalar</h2>
+      <p data-i18n="proj.sub">Taşkilot buyurtmaçi yoki ijro etuvçi sifatida iştirok etayotgan gidroenergetika obyektlari</p>
+    </header>
+
+    <ol class="projlist">
+      <li class="proj">
+        <div class="proj__cap"><b data-i18n="p1.cap">0,49</b><span data-i18n="u.mw">MVt</span></div>
+        <div class="proj__main">
+          <span class="proj__role" data-i18n="role.customer">Buyurtmaçi</span>
+          <h3 data-i18n="p1.name">Bot-bot mikro GES</h3>
+          <p data-i18n="p1.place">Samarqand viloyati, Bulunğur tumani · Bot-bot kanali</p>
+        </div>
+        <dl class="proj__specs">
+          <div><dt data-i18n="sp.gen">Yillik işlab çiqariş</dt><dd data-i18n="p1.gen">3,79 mln kVt·soat</dd></div>
+          <div><dt data-i18n="sp.fin">Moliyalaştiriş</dt><dd data-i18n="p1.fin">“Özbekgidroenergo” AJ mablağlari</dd></div>
+          <div><dt data-i18n="sp.term">Muddati</dt><dd data-i18n="p1.term">2026-yil</dd></div>
+        </dl>
+      </li>
+
+      <li class="proj">
+        <div class="proj__cap"><b data-i18n="p2.cap">12,2</b><span data-i18n="u.mw">MVt</span></div>
+        <div class="proj__main">
+          <span class="proj__role" data-i18n="role.exec">Ijro etuvçi taşkilot</span>
+          <h3 data-i18n="p2.name">JFK-5 GES</h3>
+          <p data-i18n="p2.place">Farğona viloyati, Quva tumani · Janubiy Farğona kanali (PK-571)</p>
+        </div>
+        <dl class="proj__specs">
+          <div><dt data-i18n="sp.gen">Yillik işlab çiqariş</dt><dd data-i18n="p2.gen">51,7 mln kVt·soat</dd></div>
+          <div><dt data-i18n="sp.cost">Loyiha qiymati</dt><dd data-i18n="p2.cost">22,4 mln AQŞ $</dd></div>
+          <div><dt data-i18n="sp.term">Muddati</dt><dd data-i18n="p2.term">2026–2029-yillar</dd></div>
+        </dl>
+      </li>
+
+      <li class="proj">
+        <div class="proj__cap"><b data-i18n="p3.cap">12,6</b><span data-i18n="u.mw">MVt</span></div>
+        <div class="proj__main">
+          <span class="proj__role" data-i18n="role.exec">Ijro etuvçi taşkilot</span>
+          <h3 data-i18n="p3.name">Şahrixon GESlar kaskadi — GES-5a</h3>
+          <p data-i18n="p34.place">“Şahrixon GESlar kaskadi”ni modernizatsiya qiliş</p>
+        </div>
+        <dl class="proj__specs">
+          <div><dt data-i18n="sp.gen">Yillik işlab çiqariş</dt><dd data-i18n="p3.gen">29,4 mln kVt·soat</dd></div>
+          <div><dt data-i18n="sp.cost">Loyiha qiymati</dt><dd data-i18n="p3.cost">11,2 mln AQŞ $</dd></div>
+          <div><dt data-i18n="sp.term">Muddati</dt><dd data-i18n="p34.term">2026–2028-yillar</dd></div>
+        </dl>
+      </li>
+
+      <li class="proj">
+        <div class="proj__cap"><b data-i18n="p4.cap">3,8</b><span data-i18n="u.mw">MVt</span></div>
+        <div class="proj__main">
+          <span class="proj__role" data-i18n="role.exec">Ijro etuvçi taşkilot</span>
+          <h3 data-i18n="p4.name">Şahrixon GESlar kaskadi — GES-6a</h3>
+          <p data-i18n="p34.place">“Şahrixon GESlar kaskadi”ni modernizatsiya qiliş</p>
+        </div>
+        <dl class="proj__specs">
+          <div><dt data-i18n="sp.gen">Yillik işlab çiqariş</dt><dd data-i18n="p4.gen">12,7 mln kVt·soat</dd></div>
+          <div><dt data-i18n="sp.cost">Loyiha qiymati</dt><dd data-i18n="p4.cost">7,2 mln AQŞ $</dd></div>
+          <div><dt data-i18n="sp.term">Muddati</dt><dd data-i18n="p34.term">2026–2028-yillar</dd></div>
+        </dl>
+      </li>
+    </ol>
+
+    <p class="projtotal">
+      <span data-i18n="tot.label">884-son qaror böyiça jami:</span>
+      <b data-i18n="tot.cap">28,6 MVt</b>
+      <b data-i18n="tot.gen">93,8 mln kVt·soat</b>
+      <b data-i18n="tot.cost">40,8 mln AQŞ $</b>
+    </p>
+    <p class="note" data-i18n="proj.note">Manba: Vazirlar Mahkamasining 2024-yil 26-dekabrdagi 884-son qarori, Prezidentning 2026-yil 1-maydagi PQ-163-son qarori, “Özbekgidroenergo” AJ rasmiy axboroti.</p>
+
+    <article class="project">
+      <div class="project__photos">
+        <img src="assets/img/botbot-bino.jpg" alt="Bot-bot mikro GES binosi" data-i18n-alt="g1.alt" loading="lazy" width="800" height="533">
+        <img src="assets/img/botbot-agregat.jpg" alt="Bot-bot mikro GES gidroagregati" data-i18n-alt="g2" loading="lazy" width="800" height="533">
+        <img src="assets/img/botbot-quvur.jpg" alt="Bot-bot mikro GES bosimli quvuri" data-i18n-alt="g3" loading="lazy" width="800" height="533">
+      </div>
+      <div class="project__body">
+        <h3 data-i18n="p1.name">Bot-bot mikro GES</h3>
+        <p class="project__place" data-i18n="p1.place">Samarqand viloyati, Bulunğur tumani · Bot-bot kanali</p>
+        <p data-i18n="bb.p">PQ-163-son qaror ijrosi doirasida bunyod etilayotgan zamonaviy mikro GES. Loyiha-smeta hujjatlari “Gidroproyekt” AJ tomonidan işlab çiqilgan, gidroagregat mahalliy “Suvsanoatmaş” AJ korxonasida tayyorlangan.</p>
+        <table class="datatable datatable--compact">
+          <tbody>
+            <tr><th scope="row" data-i18n="bb.r1">Örnatilgan quvvat</th><td data-i18n="bb.v1">490 kVt</td></tr>
+            <tr><th scope="row" data-i18n="bb.r2">Gidroagregatlar soni</th><td data-i18n="bb.v2">1 ta</td></tr>
+            <tr><th scope="row" data-i18n="sp.gen">Yillik işlab çiqariş</th><td data-i18n="p1.gen">3,79 mln kVt·soat</td></tr>
+            <tr><th scope="row" data-i18n="bb.r4">Ta’minlanadigan xonadonlar</th><td data-i18n="bb.v4">1 300 ta</td></tr>
+            <tr><th scope="row" data-i18n="bb.r5">Tejaladigan tabiiy gaz</th><td data-i18n="bb.v5">yiliga 1,0 mln m³</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== GESlar xaritasi ===== -->
+<section class="block" id="xarita">
+  <div class="container">
+    <header class="block__head">
+      <h2 data-i18n="m.map">GESlar xaritasi</h2>
+      <p data-i18n="map.sub">“Özbekgidroenergo” AJ tizimidagi gidroelektr stansiyalar. Ma’lumotni köriş uçun kursorni hudud, stansiya yoki röyxat ustiga olib boring.</p>
+    </header>
+
+    <dl class="figures figures--three">
+      <div><dt data-i18n="mf.branches">Filiallar soni</dt><dd>15</dd></div>
+      <div><dt data-i18n="mf.cap">GESlarning umumiy quvvati</dt><dd data-i18n="mf.cap.v">2,5 GVt</dd></div>
+      <div><dt data-i18n="mf.count">GESlarning umumiy soni</dt><dd>106</dd></div>
+    </dl>
+
+    <div class="hpp" id="hpp">
+      <div class="hppmap">
+        <svg viewBox="-10 -10 820 541" role="img" aria-label="Özbekiston xaritasida GESlarning joylaşuvi" data-i18n-aria="map.aria">
+          <g class="hppmap__regions">
+          <path class="region" data-region="QR" data-cx="134.2" data-cy="135.4" data-name="Qoraqalpoğiston Respublikasi" data-i18n-name="rg.QR" d="M280.2 128.9L253.2 98.4L239.8 84.4L238.3 76.0L232.9 72.8L186.3 36.3L180.4 34.0L179.7 38.6L175.9 41.1L175.6 41.9L174.4 41.6L174.0 43.1L172.9 43.0L172.2 44.8L171.2 45.1L170.0 42.5L167.1 43.6L166.5 43.3L165.7 40.6L166.5 39.0L166.0 36.8L166.9 36.6L166.2 35.8L166.7 32.7L166.2 28.3L144.5 16.5L128.2 5.2L124.9 9.9L123.7 14.5L123.4 19.2L125.5 24.0L125.6 27.7L124.8 30.4L122.4 33.6L120.9 40.3L121.3 41.5L123.6 42.8L124.1 45.5L123.7 49.1L121.3 51.9L120.0 55.9L120.7 63.1L118.3 67.6L112.5 72.3L108.7 73.2L105.5 72.3L104.3 70.2L104.3 66.1L105.8 63.4L107.4 63.3L108.0 60.6L104.1 50.2L103.6 44.1L106.3 38.6L107.5 33.5L110.5 28.4L112.8 18.6L115.2 14.9L118.7 11.3L119.8 4.1L121.6 0.5L120.8 -0.0L46.7 21.8L-0.1 36.5L0.1 263.8L48.7 267.6L50.0 264.0L53.4 262.1L54.0 260.5L50.7 260.7L48.5 257.3L47.8 248.8L45.4 242.3L45.2 234.1L46.7 228.5L49.1 226.9L53.5 210.4L56.7 203.4L61.6 200.1L64.8 199.9L67.2 202.4L71.1 203.4L73.8 205.2L75.5 207.8L76.2 212.4L76.9 212.8L82.6 210.8L86.5 211.2L85.6 208.5L86.2 206.8L89.2 207.4L90.2 206.3L90.9 199.0L88.9 195.7L89.2 194.1L90.1 193.5L91.8 195.7L92.3 192.1L96.6 190.8L99.8 192.3L99.6 194.6L102.6 192.9L108.4 194.3L111.1 197.4L112.0 201.0L111.8 204.3L114.4 203.8L117.6 205.1L118.2 204.2L117.4 203.7L117.7 202.1L113.2 198.5L110.3 194.3L107.7 188.1L102.4 185.6L100.6 183.7L106.5 179.6L115.4 181.8L120.3 181.6L121.6 178.7L120.6 177.5L121.1 176.9L122.7 177.2L123.3 176.5L122.2 174.8L122.6 172.7L134.0 184.2L140.7 189.4L143.6 189.9L147.5 189.3L149.1 190.0L152.4 194.1L152.1 196.4L154.2 199.7L159.5 201.9L160.3 203.9L165.6 203.8L166.4 204.6L168.7 203.6L170.0 204.1L169.9 204.7L173.5 204.3L177.6 205.4L178.8 203.4L183.0 205.0L184.6 207.7L186.1 208.1L186.3 209.0L187.4 208.9L187.7 210.2L187.4 211.8L185.2 211.0L185.4 212.3L184.4 213.2L186.0 214.5L187.6 214.7L189.3 216.5L188.2 221.7L184.9 222.1L184.1 222.8L185.2 225.5L187.2 224.8L188.0 225.1L188.8 227.2L192.1 228.5L193.5 229.9L194.6 228.9L193.0 226.9L193.6 225.7L195.4 225.2L196.7 226.8L199.0 224.5L198.4 223.5L200.0 223.6L200.6 222.7L206.9 224.6L208.0 225.9L207.8 229.4L210.8 231.3L211.3 234.7L216.3 237.6L219.5 243.4L222.7 244.5L223.9 246.7L225.9 247.3L229.1 250.8L231.9 252.4L231.4 254.1L232.4 255.3L244.5 262.5L245.4 262.4L245.3 264.1L246.3 264.9L246.6 267.7L249.4 270.4L252.4 270.6L251.4 267.5L251.6 263.3L253.5 261.9L263.6 263.6L272.3 263.8L284.1 279.0L290.0 285.1L302.3 278.8L298.6 273.7L290.2 257.1L277.4 237.9L270.4 225.4L270.8 224.5L282.9 218.2L284.2 216.7L281.3 210.4L279.6 204.5L279.8 195.8L282.1 181.9L302.6 144.4L287.0 140.3Z"/>
+          <path class="region" data-region="NW" data-cx="390.7" data-cy="223.3" data-name="Navoiy viloyati" data-i18n-name="rg.NW" d="M290.2 257.1L307.4 254.9L312.1 263.7L314.3 266.1L321.9 271.2L326.0 282.2L329.4 281.7L348.9 288.2L358.6 297.1L359.5 299.7L359.1 301.9L365.7 301.4L371.1 289.0L374.4 286.7L377.0 288.8L377.1 296.6L393.4 298.5L394.5 293.4L406.2 292.2L408.5 287.2L409.5 287.4L412.5 300.5L414.4 302.1L430.2 304.3L438.2 301.5L437.3 305.2L437.7 311.9L436.9 312.7L431.9 312.9L430.4 319.2L428.5 321.0L427.5 324.9L420.6 323.9L417.4 322.8L415.3 322.9L414.0 323.8L412.6 325.8L414.9 329.0L415.4 333.3L415.0 336.1L411.9 336.8L410.6 338.2L410.2 341.7L404.2 345.8L401.9 348.4L401.7 350.9L405.0 355.9L410.7 362.4L415.0 361.6L420.0 365.4L424.4 375.2L425.0 379.8L432.0 377.1L428.9 370.5L430.8 364.9L429.4 359.5L426.0 355.6L425.7 354.4L435.0 351.1L438.9 352.5L440.0 352.2L442.6 345.1L442.9 338.2L444.3 336.1L450.5 338.9L452.5 341.9L459.5 345.1L465.0 344.6L471.4 342.5L475.4 338.5L475.3 336.9L473.1 337.8L472.3 337.7L472.0 336.6L475.2 329.0L476.3 320.5L475.1 319.2L475.7 314.1L477.9 309.4L478.8 308.3L481.1 308.2L483.2 310.5L486.5 310.7L491.0 307.4L494.4 311.5L495.7 315.1L504.3 298.3L502.5 290.8L498.0 289.5L496.3 287.6L495.1 276.9L501.9 276.6L502.0 275.1L499.7 275.1L495.1 253.3L491.6 229.6L466.7 225.9L466.8 199.7L470.0 201.1L471.2 187.0L471.3 164.0L459.5 168.9L446.2 142.3L444.9 140.7L428.7 129.6L420.2 115.9L416.9 114.7L398.4 124.9L366.8 123.1L343.0 119.9L291.4 128.1L280.2 128.9L287.0 140.3L302.6 144.4L282.1 181.9L279.8 195.8L279.6 204.5L281.3 210.4L284.2 216.7L282.9 218.2L270.8 224.5L270.4 225.4L277.4 237.9Z"/>
+          <path class="region" data-region="BU" data-cx="360.4" data-cy="335.1" data-name="Buxoro viloyati" data-i18n-name="rg.BU" d="M291.5 283.9L301.1 295.3L300.3 300.7L289.3 313.7L296.4 318.6L295.7 322.5L298.3 326.0L297.9 328.6L299.4 335.0L298.6 339.6L300.0 341.7L300.7 346.3L302.8 348.7L346.3 380.0L346.8 382.1L359.1 390.7L359.6 393.7L381.9 409.9L388.0 409.7L390.0 409.0L391.4 410.5L396.7 404.3L415.0 397.4L415.0 396.2L412.6 392.8L412.8 390.9L417.9 386.0L418.8 385.9L420.0 383.1L425.0 379.8L424.7 376.3L420.0 365.4L415.0 361.6L410.7 362.4L405.0 355.9L401.7 350.9L401.9 348.4L404.2 345.8L410.2 341.7L410.6 338.2L411.9 336.8L415.0 336.1L415.4 333.3L414.9 329.0L412.6 325.8L414.0 323.8L415.3 322.9L417.4 322.8L420.6 323.9L427.5 324.9L428.5 321.0L430.4 319.2L431.9 312.9L436.9 312.7L437.7 311.9L437.3 305.2L438.2 301.5L430.2 304.3L414.4 302.1L412.5 300.5L409.5 287.4L408.5 287.2L406.2 292.2L394.5 293.4L393.4 298.5L377.1 296.6L377.0 288.8L374.4 286.7L371.1 289.0L365.7 301.4L359.1 301.9L359.5 299.7L358.6 297.1L348.9 288.2L329.4 281.7L326.0 282.2L321.9 271.2L314.3 266.1L312.1 263.7L307.4 254.9L290.2 257.1L298.6 273.7L302.3 278.8Z"/>
+          <path class="region" data-region="XO" data-cx="213.8" data-cy="252.3" data-name="Xorazm viloyati" data-i18n-name="rg.XO" d="M193.5 229.9L194.7 231.6L199.1 233.4L201.9 236.3L201.6 237.4L200.6 237.3L191.0 233.7L189.4 236.5L191.0 240.1L194.7 245.1L194.9 248.1L194.1 248.0L193.3 249.5L191.5 250.3L190.2 255.6L191.0 258.3L194.6 261.0L197.4 263.0L199.6 263.4L205.6 268.2L209.6 270.4L213.7 270.0L218.6 268.0L222.5 267.9L233.4 268.8L234.8 270.1L234.9 267.2L235.8 268.7L235.9 267.9L236.4 268.1L237.2 270.6L237.6 269.6L239.4 272.1L244.6 274.9L248.8 274.7L251.9 271.7L252.2 270.7L249.4 270.4L246.6 267.7L246.3 264.9L245.3 264.1L245.4 262.4L244.5 262.5L232.4 255.3L231.4 254.1L231.9 252.4L229.1 250.8L225.9 247.3L223.9 246.7L222.7 244.5L219.2 243.1L216.3 237.6L211.3 234.7L210.8 231.3L208.1 230.0L208.0 225.9L206.9 224.6L200.6 222.7L200.0 223.6L198.4 223.5L199.0 224.5L196.7 226.8L195.4 225.2L193.6 225.7L193.0 226.9L194.6 228.9ZM252.3 270.2L252.4 266.1L255.8 266.1L258.8 267.7L259.9 267.2L261.8 268.0L262.6 267.5L263.7 269.6L266.6 270.6L268.7 273.0L274.6 277.1L275.4 280.6L278.4 282.2L279.9 285.5L280.1 290.5L279.4 293.9L282.0 298.8L282.5 302.5L284.3 305.1L286.4 310.8L289.3 313.7L300.3 300.7L301.1 296.8L300.5 294.1L291.5 283.9L290.0 285.1L284.1 279.0L272.3 263.8L263.6 263.6L253.5 261.9L251.6 263.3L251.4 267.5Z"/>
+          <path class="region" data-region="QA" data-cx="472.1" data-cy="417.0" data-name="Qaşqadaryo viloyati" data-i18n-name="rg.QA" d="M425.0 379.8L420.0 383.1L418.8 385.9L417.9 386.0L412.8 390.9L412.6 392.8L415.0 396.2L415.0 397.4L396.7 404.3L391.4 410.5L397.9 417.0L406.9 422.9L411.7 427.2L415.3 427.9L419.9 431.6L421.8 431.9L428.1 438.3L445.4 450.8L445.3 451.5L459.2 453.9L459.8 452.4L462.8 452.4L465.6 455.1L468.3 455.5L471.1 456.9L472.3 458.4L477.7 459.6L481.4 464.5L485.4 467.4L487.3 467.7L489.9 466.8L493.1 467.2L495.7 468.5L498.1 471.5L499.3 464.7L511.0 451.9L516.4 448.6L518.9 446.1L520.6 438.5L529.6 429.2L531.6 425.5L532.6 424.5L535.2 424.2L538.2 426.2L539.6 421.7L539.4 417.3L537.9 414.1L537.4 410.4L539.0 408.7L543.9 408.2L545.7 406.7L544.6 402.3L544.9 398.6L542.8 398.5L542.6 397.2L540.7 395.9L536.9 396.2L536.8 395.4L528.9 392.9L530.1 389.9L528.3 387.8L526.0 388.6L517.2 385.7L516.5 386.3L516.1 389.0L509.4 389.3L508.1 388.2L508.6 384.6L507.5 382.5L497.7 381.0L494.1 385.1L490.1 386.7L484.3 382.7L476.6 384.7L471.1 387.9L469.6 387.9L465.5 386.6L465.4 385.1L462.6 380.2L459.3 376.3L454.9 375.4L451.9 377.7L432.0 377.1Z"/>
+          <path class="region" data-region="SU" data-cx="535.8" data-cy="467.4" data-name="Surxondaryo viloyati" data-i18n-name="rg.SU" d="M498.1 471.5L498.4 474.4L495.7 476.3L492.3 482.3L491.4 498.0L493.5 499.9L494.0 503.8L493.9 504.6L491.5 506.3L491.1 508.0L492.6 509.3L494.5 508.4L495.8 510.7L497.3 511.3L499.1 509.2L504.1 508.8L506.5 509.4L511.1 506.6L513.9 508.1L515.5 507.7L516.2 508.2L518.6 511.0L518.6 513.3L519.3 514.3L521.0 515.2L522.5 515.1L523.9 516.2L525.4 519.9L531.0 517.7L532.2 517.8L536.9 514.6L539.8 517.7L541.3 516.5L543.4 517.6L547.2 517.7L550.2 520.3L552.7 510.9L550.3 505.4L552.3 499.9L552.2 497.6L553.7 494.7L553.2 493.4L553.9 492.9L553.7 491.9L556.6 492.7L558.4 489.6L559.8 488.7L563.9 481.3L565.9 476.3L566.2 473.7L570.6 473.6L572.0 474.5L572.4 475.6L573.1 474.8L573.6 469.4L574.4 467.6L577.7 464.2L579.0 458.2L578.9 457.1L577.8 456.8L577.4 454.2L575.7 454.9L574.2 453.6L573.6 449.4L571.0 449.5L569.7 447.4L567.4 446.3L566.5 444.0L564.4 445.3L563.0 445.1L563.4 443.4L565.5 440.4L564.6 438.9L564.8 437.5L564.1 437.4L563.0 434.8L564.4 429.7L562.7 425.3L564.0 424.3L566.1 424.1L564.4 420.4L563.2 420.0L563.3 418.8L564.5 419.1L568.1 418.0L569.5 416.4L568.4 414.3L569.8 412.6L569.2 411.4L566.4 410.0L566.6 408.9L565.5 406.7L563.8 405.9L561.4 406.9L559.4 405.5L558.5 406.1L555.0 406.4L554.0 407.5L551.7 406.5L549.3 406.6L548.4 407.5L546.3 407.5L545.7 406.7L543.9 408.2L539.9 408.4L537.8 409.5L537.3 410.8L537.9 414.1L539.4 417.3L539.6 421.7L538.2 426.2L535.2 424.2L532.6 424.5L531.6 425.5L529.6 429.2L520.6 438.5L518.9 446.1L516.4 448.6L511.0 451.9L499.3 464.7Z"/>
+          <path class="region" data-region="SA" data-cx="485.5" data-cy="356.1" data-name="Samarqand viloyati" data-i18n-name="rg.SA" d="M432.0 377.1L450.4 377.9L453.2 377.1L454.9 375.4L459.3 376.3L462.6 380.2L465.4 385.1L465.5 386.6L469.6 387.9L471.1 387.9L476.6 384.7L484.3 382.7L490.4 386.7L494.1 385.1L496.8 381.3L498.9 380.9L507.5 382.5L508.6 384.6L508.1 388.2L509.4 389.3L516.1 389.0L516.5 386.3L517.2 385.7L526.0 388.6L528.3 387.8L529.1 388.7L534.4 388.2L535.6 387.5L536.2 384.2L535.9 382.2L534.9 381.4L535.1 378.9L533.8 376.7L533.4 377.2L532.2 376.2L527.3 371.3L527.1 366.4L531.2 359.3L534.1 357.7L537.0 357.1L536.9 356.1L535.4 350.6L534.0 349.5L523.6 347.1L518.7 346.7L510.7 341.8L510.4 338.0L512.0 337.2L512.5 335.0L511.0 332.1L509.2 330.4L508.2 322.1L509.2 318.4L508.2 316.1L495.7 315.1L494.4 311.5L491.0 307.4L488.8 309.4L485.1 310.8L483.2 310.5L481.1 308.2L478.8 308.3L475.7 314.1L475.1 319.2L476.3 320.5L475.2 329.0L472.0 336.6L472.3 337.7L473.1 337.8L475.3 336.9L475.4 338.5L471.4 342.5L465.0 344.6L459.5 345.1L452.5 341.9L450.5 338.9L444.3 336.1L442.9 338.2L442.6 345.1L440.0 352.2L438.9 352.5L435.0 351.1L425.7 354.4L426.0 355.6L429.4 359.5L430.8 364.9L428.9 370.5Z"/>
+          <path class="region" data-region="JI" data-cx="545.0" data-cy="323.6" data-name="Jizzax viloyati" data-i18n-name="rg.JI" d="M495.7 315.1L508.2 316.1L509.2 318.4L508.2 322.1L509.2 330.4L511.0 332.1L512.5 335.0L512.0 337.2L510.4 338.0L510.7 341.8L518.7 346.7L523.6 347.1L534.0 349.5L535.4 350.6L537.0 357.1L534.1 357.7L531.2 359.3L527.1 366.4L527.3 371.3L533.4 377.2L533.8 376.7L531.8 375.2L532.7 374.5L535.3 374.6L535.4 374.1L534.1 373.5L534.5 371.8L542.7 370.4L543.8 368.3L545.3 368.1L546.5 366.8L548.9 368.0L550.4 366.9L552.4 368.5L554.3 368.8L557.2 370.5L559.0 370.2L561.8 371.9L563.8 372.0L565.5 372.9L568.2 372.5L570.0 373.4L573.1 372.9L577.3 374.8L578.4 373.9L581.4 374.6L583.0 374.0L584.0 374.7L585.7 374.2L585.2 371.4L586.8 370.2L587.2 368.8L588.9 368.1L589.5 365.4L588.4 364.7L588.3 363.2L587.6 362.7L589.7 360.4L589.6 354.8L591.9 355.9L594.4 354.5L595.1 356.1L596.1 356.5L596.9 354.4L599.3 352.6L599.1 349.6L598.0 347.3L598.5 346.5L599.5 349.3L599.7 353.8L601.8 353.9L603.7 350.6L599.6 342.8L601.0 342.3L601.8 342.7L602.3 341.5L605.3 341.6L604.9 340.3L606.6 340.1L608.0 338.4L607.5 336.2L605.9 336.9L603.3 336.8L596.2 339.6L592.5 339.8L589.6 341.0L584.9 338.4L585.0 336.8L590.0 335.2L590.5 328.4L576.9 331.8L565.4 331.6L564.4 329.7L564.3 327.5L565.6 324.2L570.0 319.7L569.0 318.7L569.1 315.4L566.6 314.9L567.2 311.9L567.9 309.6L569.3 311.1L571.7 303.9L563.7 296.9L561.2 296.2L559.0 294.2L558.8 292.4L560.4 292.5L560.6 290.4L564.6 287.8L563.0 287.2L563.9 286.8L563.9 283.8L562.4 282.7L566.1 281.5L565.3 279.7L563.9 278.8L562.5 281.3L561.2 281.5L561.2 282.7L559.3 282.3L559.6 278.6L558.5 274.6L555.1 274.4L553.8 275.5L547.6 272.5L540.2 273.4L530.4 276.0L502.0 275.1L501.9 276.6L495.1 276.9L496.3 287.6L498.0 289.5L502.5 290.8L504.3 298.3Z"/>
+          <path class="region" data-region="SI" data-cx="590.3" data-cy="315.7" data-name="Sirdaryo viloyati" data-i18n-name="rg.SI" d="M590.0 287.3L589.4 285.8L591.5 284.6L589.0 283.8L588.2 281.9L586.2 283.4L584.5 283.0L583.3 285.5L581.8 286.2L582.3 286.9L584.1 286.2L584.2 287.4L585.7 287.2L587.3 288.5L587.7 292.2L586.4 293.2L586.3 295.9L587.4 297.4L587.3 301.9L590.1 302.8L590.3 305.5L589.1 306.7L591.0 308.6L590.0 308.6L587.2 310.5L584.9 309.6L583.1 310.3L582.4 309.4L579.2 307.7L577.4 307.5L571.7 303.9L569.3 311.1L567.9 309.6L566.6 314.9L569.1 315.4L569.0 318.7L570.0 319.7L565.6 324.2L564.3 327.5L564.7 330.6L565.7 331.6L576.9 331.8L590.5 328.4L590.0 335.2L596.5 333.1L597.3 335.0L599.5 334.4L600.4 332.7L608.4 331.6L614.7 332.6L610.3 326.0L610.8 322.8L610.3 321.1L612.3 318.9L611.6 316.4L610.7 315.8L611.7 314.5L609.8 314.7L610.5 313.6L610.3 310.5L611.7 310.7L610.7 309.5L610.3 310.4L609.5 310.2L610.9 308.2L609.2 307.1L609.7 306.4L609.2 305.8L606.3 305.9L607.0 304.4L604.6 304.2L605.1 303.5L604.5 301.8L602.6 301.3L601.2 297.3L598.8 296.7L598.8 295.2L595.5 293.2L594.1 293.3L594.6 291.7L593.0 292.6L593.8 290.7Z"/>
+          <path class="region" data-region="TO" data-cx="643.6" data-cy="268.7" data-name="Toşkent viloyati" data-i18n-name="rg.TO" d="M676.6 259.3L672.5 254.8L671.2 255.0L670.4 253.4L668.6 252.9L667.6 251.7L664.7 253.5L661.3 252.0L662.2 250.2L661.8 249.4L663.5 247.6L663.2 246.0L664.7 245.7L665.8 246.3L667.5 244.8L670.6 243.8L672.0 241.6L674.4 240.4L675.2 239.3L676.6 239.4L678.1 234.5L681.4 233.2L681.6 231.3L682.8 231.1L684.5 227.8L686.8 226.9L688.6 227.4L688.8 226.0L692.4 226.8L693.3 225.6L693.2 222.7L692.5 222.0L693.8 218.7L697.4 220.1L699.8 220.1L700.4 218.5L704.8 216.2L705.0 215.0L706.2 214.8L706.7 213.7L708.3 213.1L710.3 213.5L712.2 211.6L711.8 210.8L712.6 209.3L711.6 207.9L709.7 208.0L709.9 207.4L706.3 204.6L705.1 205.1L702.8 203.8L701.3 203.9L699.6 206.4L697.5 205.7L696.7 207.3L693.1 209.8L690.5 209.1L688.5 210.0L687.9 210.8L688.7 211.4L685.5 214.5L683.1 221.1L681.8 221.6L679.6 220.6L678.9 217.4L675.8 215.3L674.9 216.8L674.1 216.3L672.2 217.7L670.9 217.7L668.4 219.6L669.1 223.6L664.1 226.1L664.1 227.1L661.9 229.3L661.7 231.0L660.3 232.1L659.8 231.6L658.2 232.1L655.8 234.4L655.7 235.5L653.7 234.5L652.2 235.8L651.5 238.5L648.5 240.2L646.0 239.3L642.9 240.7L641.2 240.7L640.0 242.0L635.6 242.9L631.9 247.5L632.4 248.7L630.2 250.0L628.3 248.7L627.4 249.2L625.3 252.5L628.0 253.7L627.9 255.2L623.3 254.6L620.6 256.9L618.4 255.0L617.4 255.2L613.7 257.2L614.9 258.9L614.0 260.0L612.2 259.6L611.3 261.7L610.5 261.8L610.5 260.5L607.8 261.9L609.0 262.3L608.8 264.7L607.4 266.0L607.6 267.0L608.6 267.5L607.7 268.7L608.1 270.0L606.8 269.1L606.1 270.8L597.6 276.5L593.4 281.9L594.7 283.5L595.5 283.2L595.1 285.0L590.0 287.3L593.8 290.7L593.0 292.6L594.6 291.7L594.1 293.3L595.5 293.2L598.8 295.2L598.8 296.7L601.2 297.3L602.6 301.3L604.5 301.8L605.1 303.5L604.6 304.2L607.0 304.4L606.3 305.9L609.2 305.8L609.7 306.4L609.2 307.1L610.9 308.2L609.5 310.2L610.3 310.4L610.7 309.5L611.7 310.7L610.3 310.5L610.5 313.6L609.8 314.7L611.7 314.5L610.7 315.8L611.6 316.4L612.3 318.9L610.3 321.1L610.8 322.8L610.3 326.0L614.5 332.5L618.3 332.9L621.0 334.1L620.2 331.8L620.8 330.6L619.0 329.7L618.3 327.4L618.4 326.9L621.1 328.3L622.1 327.3L622.7 324.7L620.9 322.9L620.7 320.2L619.3 317.3L619.8 315.2L616.6 311.9L619.0 310.1L622.8 309.9L622.8 303.3L622.1 302.2L623.7 300.3L623.7 298.3L624.9 296.9L628.4 296.7L632.3 298.5L634.0 302.1L637.2 304.2L638.0 306.5L640.4 306.8L642.5 305.4L643.8 302.3L645.7 302.4L648.3 300.8L650.2 301.4L652.2 300.0L653.7 300.2L656.6 299.0L658.7 297.0L659.4 294.9L661.0 294.1L662.8 294.9L665.9 293.1L666.8 291.6L670.8 290.2L670.7 287.4L671.6 285.9L670.9 283.7L672.8 281.7L675.5 281.3L676.6 278.4L677.7 277.9L673.9 274.4L674.5 273.4L673.7 272.5L673.4 269.4L674.4 267.7L671.6 267.7L671.8 264.9L672.9 264.8L675.4 262.4ZM616.8 269.2L617.1 270.0L618.1 269.3L618.2 270.5L619.0 270.1L619.4 270.6L621.8 269.2Z"/>
+          <path class="region" data-region="FA" data-cx="713.0" data-cy="316.7" data-name="Farğona viloyati" data-i18n-name="rg.FA" d="M726.7 297.9L718.4 302.0L716.9 304.4L713.1 307.8L707.0 304.9L705.1 303.0L704.3 301.0L706.0 298.6L699.2 298.7L690.9 300.6L689.7 301.4L689.0 303.4L687.6 303.2L687.8 305.0L686.3 304.7L683.2 307.1L680.9 310.7L677.4 311.5L676.1 314.5L669.0 317.1L668.8 318.2L671.1 321.8L676.0 324.0L679.6 323.8L680.4 324.8L679.6 326.4L680.3 328.2L680.2 330.7L683.0 334.7L688.9 334.1L693.8 332.0L698.8 332.0L699.3 331.3L698.4 327.9L701.0 327.4L701.7 328.4L703.7 327.6L706.2 324.8L710.6 324.6L711.9 325.1L711.4 325.8L712.9 324.5L714.2 325.3L714.6 326.7L715.2 326.1L717.3 326.0L717.3 326.8L718.4 326.6L720.1 328.1L723.5 328.6L724.1 331.4L726.7 332.5L729.0 332.9L728.8 332.2L729.5 332.2L729.1 329.2L731.9 329.0L733.1 333.2L732.5 333.0L732.8 333.8L731.7 333.6L733.6 334.9L734.2 336.5L736.8 333.2L738.9 332.2L739.4 330.0L741.4 329.5L744.2 331.0L745.2 330.6L744.0 330.2L744.4 329.9L745.8 329.8L747.0 328.7L747.9 329.3L749.1 328.6L749.2 328.0L746.4 327.1L745.2 326.0L751.0 320.6L750.8 317.8L752.9 317.5L754.9 315.0L755.8 316.0L757.2 315.7L757.2 311.4L756.9 310.5L752.9 309.2L740.7 307.3L738.7 304.1L735.0 301.7L731.9 301.3L730.7 299.5L729.5 301.1L729.3 303.0L729.9 304.5L727.5 306.8L725.2 301.6L723.2 300.3L727.3 299.1ZM700.1 334.4L701.0 338.3L700.6 342.6L702.3 344.3L705.5 344.8L705.5 346.1L704.3 346.3L705.7 348.2L704.0 349.3L703.7 351.0L702.5 351.9L704.6 352.8L704.7 351.3L705.7 350.5L706.2 352.7L709.2 352.1L709.3 351.2L710.7 350.3L709.0 349.0L710.2 348.7L706.3 348.3L707.8 347.4L707.9 346.5L706.8 345.7L708.8 345.6L709.8 343.4L705.5 344.6L703.5 335.8L702.2 334.4ZM733.5 347.8L733.6 348.7L735.0 348.6L734.9 349.8L736.9 347.8L739.5 349.1L740.2 346.7L738.5 346.5L736.4 344.4L736.9 346.3Z"/>
+          <path class="region" data-region="NG" data-cx="712.0" data-cy="281.0" data-name="Namangan viloyati" data-i18n-name="rg.NG" d="M755.9 284.0L755.4 284.1L755.0 282.7L756.5 282.0L756.5 280.2L755.1 276.7L753.8 276.1L755.0 274.2L754.7 273.7L751.8 274.4L750.1 276.6L747.4 275.1L747.1 274.2L744.9 274.2L744.1 274.9L741.5 273.5L741.4 271.9L740.4 271.4L741.5 268.0L743.3 265.6L741.5 263.7L741.3 261.5L740.6 262.3L739.2 261.9L738.9 260.2L737.3 258.6L737.1 256.7L736.2 256.2L735.3 257.0L734.5 255.9L733.8 257.7L733.1 257.6L732.6 256.5L734.0 254.1L733.9 252.2L734.5 250.9L734.0 250.1L731.4 253.1L730.1 253.5L731.6 254.8L731.2 256.1L731.9 257.8L730.1 262.3L729.2 262.3L727.1 265.6L726.0 265.9L722.9 264.3L721.1 266.1L721.7 270.4L720.5 271.7L721.2 274.2L719.4 277.4L718.6 277.2L718.0 274.6L716.8 273.6L715.4 274.3L714.7 276.5L713.0 277.3L712.8 273.1L711.3 272.0L710.3 273.5L709.2 272.4L706.1 275.0L701.6 271.9L698.5 273.8L693.4 268.4L690.8 269.6L690.1 271.8L689.3 267.5L690.1 263.7L689.8 260.0L687.1 256.5L686.9 255.1L685.5 254.7L683.7 255.5L681.2 255.6L679.2 258.5L676.6 259.3L675.4 262.4L672.9 264.8L672.2 264.5L671.6 265.9L671.6 267.7L674.4 267.7L673.4 269.4L673.3 271.0L674.5 273.4L674.2 275.0L677.7 277.9L676.6 278.4L675.5 281.3L677.5 283.2L677.9 284.9L679.8 285.7L683.6 292.2L686.7 294.7L687.4 295.7L686.3 296.2L688.1 298.4L689.6 299.2L690.6 300.8L699.2 298.7L706.0 298.6L704.3 301.0L705.1 303.0L707.0 304.9L712.7 307.7L716.9 304.4L718.4 302.0L729.2 296.6L727.0 293.9L730.2 291.1L738.9 288.9L742.6 289.0L748.8 290.7L752.7 290.3L753.3 289.2L754.7 289.1Z"/>
+          <path class="region" data-region="AN" data-cx="760.6" data-cy="299.1" data-name="Andijon viloyati" data-i18n-name="rg.AN" d="M726.7 297.9L727.3 299.1L723.2 300.3L725.2 301.6L727.5 306.8L729.9 304.5L729.3 303.0L729.5 301.1L730.7 299.5L731.9 301.3L735.0 301.7L738.7 304.1L740.7 307.3L750.6 308.7L756.9 310.5L757.2 315.7L758.6 316.0L758.2 317.2L760.7 318.3L761.8 318.1L764.0 320.2L766.0 320.9L767.4 316.4L766.2 314.3L764.5 313.8L766.7 312.3L766.4 311.0L765.0 310.7L765.2 310.1L763.0 308.4L764.7 308.5L764.8 307.8L766.0 307.5L769.0 311.6L770.4 311.0L775.5 313.8L777.4 314.1L778.0 313.3L777.8 309.5L779.2 308.7L782.3 310.3L781.8 308.1L783.7 305.3L783.5 304.5L784.2 303.8L786.3 304.1L787.2 302.4L786.6 301.7L791.0 300.4L793.0 298.4L795.9 298.4L800.0 297.1L799.8 294.2L798.5 294.2L797.4 293.1L793.5 293.6L790.6 296.2L785.6 292.7L780.1 293.2L774.4 292.0L773.9 290.9L774.5 289.7L772.5 286.2L769.9 285.9L770.2 284.7L768.0 282.1L764.9 282.1L763.1 280.1L762.2 281.6L760.3 282.1L759.4 283.2L755.9 284.0L754.7 289.1L753.3 289.2L752.7 290.3L748.8 290.7L742.6 289.0L738.9 288.9L730.2 291.1L727.0 293.9L729.2 296.6Z"/>
+          <path class="region" data-region="TK" data-cx="619.0" data-cy="265.7" data-name="Toşkent şahri" data-i18n-name="rg.TK" d="M612.5 267.4L613.7 266.5L615.4 270.8L616.9 268.3L615.6 271.2L616.3 271.6L615.2 272.6L617.7 272.1L617.5 273.2L618.9 273.3L619.1 271.7L621.8 270.0L623.1 269.9L624.2 268.6L625.1 268.9L624.7 268.1L625.3 267.4L623.9 265.5L624.6 265.0L623.0 264.9L624.5 262.7L625.8 262.6L625.2 261.9L625.6 261.1L623.1 261.9L621.6 260.1L617.6 259.3L614.7 261.8Z"/>
+          </g>
+          <g class="hppmap__pins"></g>
+        </svg>
+
+        <div class="mapcard" id="mapcard" aria-hidden="true">
+          <span class="mapcard__kicker"></span>
+          <strong class="mapcard__name"></strong>
+          <dl>
+            <div><dt></dt><dd></dd></div>
+            <div><dt></dt><dd></dd></div>
+            <div><dt></dt><dd></dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <ol class="plants">
+        <li class="plants__head" aria-hidden="true">
+          <span data-i18n="map.col.name">Filial</span>
+          <span data-i18n="map.col.count">GES</span>
+          <span data-i18n="map.cap">Quvvati</span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl1" data-region="TO" data-count="8" data-mw="1066.79" data-x="652.0" data-y="245.5">
+          <span class="plant__name" data-i18n="pl1">“Örta Çirçiq GESlar kaskadi”</span>
+          <span class="plant__count"><b>8</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>1 066,79</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl2" data-region="TO" data-count="4" data-mw="203.86" data-x="634.8" data-y="254.2">
+          <span class="plant__name" data-i18n="pl2">“Çirçiq GESlar kaskadi”</span>
+          <span class="plant__count"><b>4</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>203,86</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl3" data-region="TO" data-count="4" data-mw="46.74" data-x="630.1" data-y="261.6">
+          <span class="plant__name" data-i18n="pl3">“Qodiriya GESlar kaskadi”</span>
+          <span class="plant__count"><b>4</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>46,74</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl4" data-region="TK" data-count="4" data-mw="32.6" data-x="619.4" data-y="265.3">
+          <span class="plant__name" data-i18n="pl4">“Toşkent GESlar kaskadi”</span>
+          <span class="plant__count"><b>4</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>32,6</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl5" data-region="TO" data-count="6" data-mw="66.6" data-x="607.7" data-y="275.2">
+          <span class="plant__name" data-i18n="pl5">“Quyi Bözsuv GESlar kaskadi”</span>
+          <span class="plant__count"><b>6</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>66,6</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl6" data-region="TO" data-count="3" data-mw="25.53" data-x="655.8" data-y="282.6">
+          <span class="plant__name" data-i18n="pl6">“Ohangaron GES”</span>
+          <span class="plant__count"><b>3</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>25,53</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl7" data-region="NG" data-count="1" data-mw="26.5" data-x="693.1" data-y="285.1">
+          <span class="plant__name" data-i18n="pl7">“Qamçiq GES”</span>
+          <span class="plant__count"><b>1</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>26,5</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl8" data-region="NG" data-count="7" data-mw="73.97" data-x="747.7" data-y="276.4">
+          <span class="plant__name" data-i18n="pl8">“Norin GESlar kaskadi”</span>
+          <span class="plant__count"><b>7</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>73,97</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl9" data-region="AN" data-count="10" data-mw="38.56" data-x="749.1" data-y="301.2">
+          <span class="plant__name" data-i18n="pl9">“Şahrixon GESlar kaskadi”</span>
+          <span class="plant__count"><b>10</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>38,56</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl10" data-region="AN" data-count="4" data-mw="195.7" data-x="791.1" data-y="297.5">
+          <span class="plant__name" data-i18n="pl10">“Andijon GES”</span>
+          <span class="plant__count"><b>4</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>195,7</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl11" data-region="SI" data-count="4" data-mw="129.0" data-x="604.4" data-y="327.2">
+          <span class="plant__name" data-i18n="pl11">“Farhod GES”</span>
+          <span class="plant__count"><b>4</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>129,0</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl12" data-region="SA" data-count="19" data-mw="74.16" data-x="511.6" data-y="367.4">
+          <span class="plant__name" data-i18n="pl12">“Samarqand GESlar kaskadi”</span>
+          <span class="plant__count"><b>19</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>74,16</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl13" data-region="QA" data-count="5" data-mw="73.43" data-x="513.4" data-y="407.6">
+          <span class="plant__name" data-i18n="pl13">“Hisorak GES”</span>
+          <span class="plant__count"><b>5</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>73,43</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl14" data-region="SU" data-count="7" data-mw="273.38" data-x="550.8" data-y="447.8">
+          <span class="plant__name" data-i18n="pl14">“Töpalang GES”</span>
+          <span class="plant__count"><b>7</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>273,38</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl15" data-region="XO" data-count="1" data-mw="150.0" data-x="245.0" data-y="264.1">
+          <span class="plant__name" data-i18n="pl15">“Tuyamöyin GES”</span>
+          <span class="plant__count"><b>1</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>150,0</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+        <li class="plant" tabindex="0" data-id="pl16" data-region="QR SU QA" data-count="13" data-mw="0.7">
+          <span class="plant__name" data-i18n="pl16">Kinetik mikroGESlar (Qoraqalpoğiston, Surxondaryo, Qaşqadaryo)</span>
+          <span class="plant__count"><b>13</b> <span data-i18n="u.pcs">ta</span></span>
+          <span class="plant__mw"><b>0,7</b> <span data-i18n="u.mw">MVt</span></span>
+        </li>
+      </ol>
+    </div>
+    <p class="note" data-i18n="map.note">Manba: “Özbekgidroenergo” AJ infografikasi. Stansiyalar joylaşuvi taxminiy körsatilgan. Hudud çegaralari: geoBoundaries, © OpenStreetMap iştirokçilari (ODbL).</p>
+  </div>
+</section>
+
+<!-- ===== Hujjatlar + Rahbariyat ===== -->
+<section class="block">
+  <div class="container twocol">
+
+    <div id="hujjatlar">
+      <header class="block__head">
+        <h2 data-i18n="m.docs">Hujjatlar</h2>
+      </header>
+
+      <ul class="docs">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6ZM15 2v5h5M9 12h8M9 15.5h8M9 19h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <div>
+            <span class="docs__meta" data-i18n="doc1.m">Özbekiston Respublikasi Prezidentining qarori · PQ-163-son · 01.05.2026</span>
+            <h3 data-i18n="doc1.t">Gidroenergetika sohasini yanada rivojlantiriş böyiça keçiktirib bölmaydigan çora-tadbirlar töğrisida</h3>
+            <p data-i18n="doc1.p">Taşkilot — “Özbekgidroenergo” AJ tizimida obyektlarni tayyor holda foydalanişga topşiriş böyiça buyurtmaçi. Dastur doirasida 2026–2032-yillarda 73 ta loyiha amalga oşiriladi, 3,3 GVt qöşimça quvvat yaratiladi.</p>
+          </div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6ZM15 2v5h5M9 12h8M9 15.5h8M9 19h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <div>
+            <span class="docs__meta" data-i18n="doc2.m">Vazirlar Mahkamasining qarori · 884-son · 26.12.2024</span>
+            <h3 data-i18n="doc2.t">“Şahrixon GESlar kaskadi”ni modernizatsiya qiliş va “Janubiy Farğona kanalida (PK-571) JFK-5 GES qurilişi” investitsiya loyihalarini amalga oşiriş çora-tadbirlari töğrisida</h3>
+            <p data-i18n="doc2.p">Taşkilot investitsiya loyihalari böyiça ijro etuvçi taşkilot etib belgilangan. Loyihalarning jami quvvati — 28,6 MVt, qiymati — 40,8 mln AQŞ dollari.</p>
+          </div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6ZM15 2v5h5M9 12h8M9 15.5h8M9 19h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <div>
+            <span class="docs__meta" data-i18n="doc3.m">Özbekiston Respublikasi Prezidentining qarori · PQ-298-son · 19.08.2026</span>
+            <h3 data-i18n="doc3.t">Mamlakatda kiçik va mikro gidroelektr stansiyalari tarmoğini rivojlantirişning navbatdagi çora-tadbirlari töğrisida</h3>
+            <p data-i18n="doc3.p">2026–2030-yillarda kiçik va mikro GESlarni rivojlantirişga oid sohaviy hujjat.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="rahbariyat">
+      <header class="block__head">
+        <h2 data-i18n="m.lead">Rahbariyat</h2>
+      </header>
+
+      <article class="chief">
+        <img src="assets/img/direktor.jpg" alt="Taşkilot direktori Zokirov Avazbek Zokirjon öğli" data-i18n-alt="chief.alt" loading="lazy" width="800" height="800">
+        <div class="chief__body">
+          <span class="chief__post" data-i18n="chief.post">Direktor</span>
+          <h3 data-i18n="chief.name">Zokirov Avazbek Zokirjon öğli</h3>
+          <dl>
+            <div><dt data-i18n="chief.r1">Tayinlangan</dt><dd data-i18n="chief.v1">2026-yil iyun</dd></div>
+            <div><dt data-i18n="chief.r2">Avvalgi lavozimi</dt><dd data-i18n="chief.v2">“Özbekgidroenergo” AJ Xorijiy investitsiyalar departamenti boşliği</dd></div>
+            <div><dt data-i18n="lbl.addr">Manzil</dt><dd data-i18n="addr.short">Toşkent ş., Bobur köçasi, 20-uy</dd></div>
+          </dl>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Fotogalereya ===== -->
+<section class="block block--grey" id="galereya">
+  <div class="container">
+    <header class="block__head">
+      <h2 data-i18n="m.gal">Fotogalereya</h2>
+    </header>
+
+    <div class="photos">
+      <button class="photos__item" data-caption="Bot-bot mikro GES binosi, Samarqand viloyati" data-i18n-caption="g1"><img src="assets/img/botbot-bino.jpg" alt="Bot-bot mikro GES binosi" data-i18n-alt="g1.alt" loading="lazy"></button>
+      <button class="photos__item" data-caption="Bot-bot mikro GES gidroagregati" data-i18n-caption="g2"><img src="assets/img/botbot-agregat.jpg" alt="Bot-bot mikro GES gidroagregati" data-i18n-alt="g2" loading="lazy"></button>
+      <button class="photos__item" data-caption="Bot-bot mikro GES bosimli quvuri" data-i18n-caption="g3"><img src="assets/img/botbot-quvur.jpg" alt="Bot-bot mikro GES bosimli quvuri" data-i18n-alt="g3" loading="lazy"></button>
+      <button class="photos__item" data-caption="KPI tizimi böyiça yiğiliş, 2026-yil 4-iyun" data-i18n-caption="g4"><img src="assets/img/kpi-yigilish-1.jpg" alt="KPI tizimi böyiça yiğiliş, 2026-yil 4-iyun" data-i18n-alt="g4" loading="lazy"></button>
+      <button class="photos__item" data-caption="Taşkilot rahbariyati va mas’ullari iştirokidagi yiğiliş" data-i18n-caption="g5"><img src="assets/img/kpi-yigilish-2.jpg" alt="Taşkilot rahbariyati va mas’ullari iştirokidagi yiğiliş" data-i18n-alt="g5" loading="lazy"></button>
+      <button class="photos__item" data-caption="Tadbirkorlar bilan oçiq muloqot, Samarqand, 2026-yil sentabr" data-i18n-caption="g6"><img src="assets/img/ochiq-muloqot.jpg" alt="Tadbirkorlar bilan oçiq muloqot" data-i18n-alt="g6.alt" loading="lazy"></button>
+      <button class="photos__item" data-caption="TIQXMMI talabalari bilan oçiq muloqot, 2026-yil aprel" data-i18n-caption="g7"><img src="assets/img/talabalar-muloqot.jpg" alt="TIQXMMI talabalari bilan oçiq muloqot, 2026-yil aprel" data-i18n-alt="g7" loading="lazy"></button>
+      <button class="photos__item" data-caption="“Mötabar ayol” kökrak nişoni topşirilişi, 2025-yil mart" data-i18n-caption="g8"><img src="assets/img/motabar-ayol.jpg" alt="“Mötabar ayol” kökrak nişoni topşirilişi, 2025-yil mart" data-i18n-alt="g8" loading="lazy"></button>
+    </div>
+    <p class="note" data-i18n="gal.note">Fotosuratlar: “Özbekgidroenergo” AJ axborot xizmati.</p>
+  </div>
+</section>
+
+<!-- ===== Bog‘lanish ===== -->
+<section class="block" id="aloqa">
+  <div class="container">
+    <header class="block__head">
+      <h2 data-i18n="m.contact">Boğlaniş</h2>
+    </header>
+
+    <table class="datatable datatable--contact">
+      <tbody>
+        <tr><th scope="row" data-i18n="lbl.org">Taşkilot</th><td data-i18n="org.short">“Gidroquriliş buyurtmaçi xizmati” MÇJ</td></tr>
+        <tr><th scope="row" data-i18n="lbl.addr">Manzil</th><td data-i18n="addr.full">Toşkent şahri, Yakkasaroy tumani, Rakatboşi MFY, Bobur köçasi, 20-uy</td></tr>
+        <tr><th scope="row" data-i18n="lbl.phone">Telefon</th><td><a href="tel:+998915005168">+998 91 500-51-68</a></td></tr>
+        <tr><th scope="row" data-i18n="lbl.parent">Yuqori turuvçi taşkilot</th><td data-i18n="org.parent">“Özbekgidroenergo” aksiyadorlik jamiyati</td></tr>
+        <tr><th scope="row" data-i18n="req.inn">STIR</th><td>305071842</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container">
+    <nav class="footer__menu" aria-label="Quyi menyu" data-i18n-aria="f.aria">
+      <a href="#yangiliklar" data-i18n="m.news">Yangiliklar</a>
+      <a href="#tashkilot" data-i18n="m.about">Taşkilot haqida</a>
+      <a href="#faoliyat" data-i18n="m.act">Faoliyat</a>
+      <a href="#loyihalar" data-i18n="m.proj">Loyihalar</a>
+      <a href="#xarita" data-i18n="m.map">GESlar xaritasi</a>
+      <a href="#hujjatlar" data-i18n="m.docs">Hujjatlar</a>
+      <a href="#rahbariyat" data-i18n="m.lead">Rahbariyat</a>
+      <a href="#galereya" data-i18n="m.gal">Fotogalereya</a>
+      <a href="#aloqa" data-i18n="m.contact">Boğlaniş</a>
+    </nav>
+
+    <div class="footer__cols">
+      <div>
+        <strong class="footer__name" data-i18n="f.name">“Gidroquriliş buyurtmaçi xizmati” mas’uliyati çeklangan jamiyati</strong>
+        <p data-i18n="addr.full">Toşkent şahri, Yakkasaroy tumani, Rakatboşi MFY, Bobur köçasi, 20-uy</p>
+        <p><span data-i18n="lbl.phone">Telefon</span>: <a href="tel:+998915005168">+998 91 500-51-68</a></p>
+      </div>
+      <div class="footer__legal">
+        <p>© 2017–<span id="year">2026</span>. <span data-i18n="f.legal">Barça huquqlar himoyalangan. Uşbu veb-saytdagi ma’lumotlardan foydalanilganda havola körsatilişi şart.</span></p>
+        <p><span data-i18n="f.updated">Oxirgi yangilaniş</span>: 26.11.2026</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="Yuqoriga" data-i18n-aria="top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+</button>
+
+<!-- Fotosurat oynasi -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Fotosurat" data-i18n-aria="lb.aria" hidden>
+  <button class="lightbox__close" aria-label="Yopiş" data-i18n-aria="lb.close">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" aria-label="Oldingi" data-i18n-aria="lb.prev">‹</button>
+  <figure>
+    <img alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" aria-label="Keyingi" data-i18n-aria="lb.next">›</button>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
